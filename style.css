@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-image: url(Pictures/table_background.jpg);
+    background-size: cover;
+}
+
+.main-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 4vh 3fr 1fr 1fr;
+    grid-template-areas: 
+        ". . header . ."
+        ". . . . ."
+        ". . title . ."
+        ". work display break ."
+        ". . buttons . ."
+        ". . . . .";
+
+    margin: 150px 20%;
+    background-color: rgb(126, 101, 65);
+    width: 60%;
+    border: 4px solid rgb(41, 68, 99);
+    border-radius: 15px;
+}
+
+header {
+    grid-area: header;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.timer-title {
+    grid-area: title;
+    font-size: 25px;
+    
+}
+
+.work-container {
+    grid-area: work;
+}
+
+.display-container {
+    grid-area: display;
+    font-size: 55px;
+    margin: auto;
+}
+
+.break-container {
+    grid-area: break;
+}
+
+.button-container {
+    grid-area: buttons;
+}

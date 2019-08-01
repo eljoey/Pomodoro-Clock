@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d13f91df5.js"></script>
 
 </head>
 <body>
@@ -14,23 +15,23 @@
         <header>Pomodoro Timer</header>
         <div class="timer-title">Session Timer</div>
         <div class="work-container">
-            <h4>Work Time</h4>
-            <input type="button" value="workIncrease">
-            <p>25</p>
-            <input type="button" value="workDecrease">
+            <h4>Work</h4>
+            <button class="workUp"><i class="fas fa-angle-up"></i></button>
+            <p class="workValue">25</p>
+            <button class="workDown"><i class="fas fa-angle-down"></i></button>
         </div>
         <div class="display-container">
             <p class="clock"><span class="clockMinutes">25</span>:<span class="clockSeconds">00</span></p>
         </div>        
         <div class="break-container">
-            <h4>Break Time</h4>
-            <input type="button" value="breakIncrease">
+            <h4>Break</h4>
+            <button class="breakUp"><i class="fas fa-angle-up"></i></button>
             <p class="breakValue">5</p>
-            <input type="button" value="breakDecrease">
+            <button class="breakDown"><i class="fas fa-angle-down"></i></button>
         </div>
         <div class="button-container">
-            <input type="button" value="">
-            <input type="button" value="Reset">
+            <input type="button" value="Play" class="start">
+            <input type="button" value="Reset" class="reset">
         </div>
     </div>
 
